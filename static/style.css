@@ -1,0 +1,123 @@
+:root {
+  --primary: #0066cc;
+  --danger: #d9534f;
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --muted: #666;
+  --container-width: 900px;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: #222;
+}
+
+.topbar {
+  background: var(--primary);
+  color: white;
+  padding: 14px 0;
+}
+
+.topbar .container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+a { text-decoration: none; color: inherit; }
+
+h1 a { color: white; }
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.search-form {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+}
+.search-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.search-form button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  background: var(--primary);
+  color: white;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background: white;
+  cursor: pointer;
+}
+.btn.primary {
+  background: var(--primary);
+  color: white;
+  border: none;
+}
+.btn.danger {
+  background: var(--danger);
+  color: white;
+  border: none;
+}
+
+.list { margin-top: 8px; display: grid; gap: 10px; }
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.card-left { }
+.name { font-weight: 600; font-size: 16px; }
+.meta { color: var(--muted); font-size: 13px; margin-top: 6px; }
+
+.card-right { display: flex; gap: 8px; align-items: center; }
+
+.inline-form { display: inline; margin: 0; }
+
+.form {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+.form label { display:block; margin-top: 8px; margin-bottom: 6px; font-size: 14px;}
+.form input[type="text"], .form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-actions { margin-top: 12px; display:flex; gap:8px; }
+
+.flash-area { margin-bottom: 12px; }
+.flash { padding: 10px 12px; border-radius: 6px; margin-bottom: 6px; }
+.flash.success { background: #e6f4ea; color: #13622b; border: 1px solid #c6e6cf; }
+.flash.danger { background: #fdecea; color: #6f1e18; border: 1px solid #f5c6c2; }
