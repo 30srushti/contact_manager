@@ -1,14 +1,14 @@
 # Flask Contact Manager
 
 A simple **Contact Manager Web Application** built using **Flask**.  
-It allows users to **add, view, update, and delete contacts** stored in a text file.
+It allows users to **add, view, update, and delete contacts** stored in a db.
 
 ## Features
 - Add new contacts (name, phone, email)
 - View all saved contacts
 - Update existing contacts
 - Delete contacts
-- Simple file-based storage (`contacts.txt`)
+- Simple file-based storage (`contacts.db`)
 - User-friendly interface with HTML templates
 
 ## Technologies
@@ -22,7 +22,7 @@ It allows users to **add, view, update, and delete contacts** stored in a text f
 ## Project Structure
 contact_app/
 ├── app.py
-├── contacts.txt
+├── contacts.db
 ├── requirements.txt
 ├── templates/
 │ ├── base.html
